@@ -1,0 +1,366 @@
+@font-face {
+    font-family: Hanken-Grotesk;
+    src: url(../results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    --Gradients-background-blue: hsl(252, 100%, 67%);
+    --Gradients-backgrounds-blue: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    box-sizing: border-box;
+  } 
+
+body{
+    margin: 50px 0;
+    padding: 0;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    font-size: 18px;
+    font-family: Hanken-Grotesk, sans-serif;
+    /* margin: 7% 25%;     */
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+
+    /* 
+    width: 100%;
+    justify-content: center;
+    top: 20%;
+    left: 30%;  */
+    
+    
+}
+
+
+
+.your-result {
+    box-shadow: 0px 14px 50px 0px var(--Light-lavender);
+    border-radius: 20px;
+    color: var(--White);
+    background: linear-gradient(var(--Gradients-background-blue), var(--Gradients-backgrounds-blue));
+    width: 50%;
+    height: auto;
+   z-index: 1;
+   
+    /* position: fixed;
+    top: 20%;
+    left: 32%;
+   flex: 50%; */
+}
+
+.your-result h4 {
+    font-size: 15px;
+    font-family: sans-serif;
+    position: relative;
+    left: 38%;
+    color: var(--Light-lavender)
+}
+
+.of{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    background: linear-gradient(hsl(256deg 73.95% 45.8%), hsl(241deg 65.48% 56.67%));
+    border-radius: 50%;
+    width: 176px;
+    height: 164px;
+    
+       
+}
+
+
+
+.head h1 {
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    left: 55px;
+    margin: 0;
+    top: 30px;
+    
+}
+
+.head span {
+    font-size: 12px;
+    font-family: sans-serif;
+    color: var(--Light-lavender);
+    position: relative;
+    top: 45px;
+    left: 70px;
+}
+
+.box1{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    /* left: 15px; */
+    top: 45px;
+
+}
+
+
+.your-result .Great {
+    font-size: 25px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+.head2 p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin: 0 35px;
+    padding: 15px 0;
+    color: var(--Light-lavender);
+    height: 103px;
+    overflow: hidden;
+    
+}
+
+
+                /* ___________________________**************************************************__________________________________________ */
+
+
+.summary {
+    box-shadow: 14px 14px 50px 0px var(--Light-lavender);
+    width: 50%;
+    border-radius: 0 30px 30px 0;
+    height: auto;
+    /* position: fixed;
+    left: 53%;
+    top: 20%;
+     */
+    
+} 
+
+.summary h4 {
+    margin: 20px;
+
+
+}
+
+.summary ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 3;
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+
+
+.summary a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 22px 13px 22px;
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 10px;
+    color: var(--White);
+    background-color: var(--Dark-gray-blue);
+
+}
+
+a:hover {
+    background: linear-gradient(var(--Gradients-background-blue), var(--Gradients-backgrounds-blue));
+
+}
+
+.summary li {
+
+    border-radius: 20px;
+    margin: 4px 0;
+
+}
+
+.summary span {
+    word-spacing: 5px;
+
+}
+
+
+.summary span img {
+    vertical-align: sub;
+    margin: 0 0 0 13px;
+}
+
+.summary li p {
+    display: inline;
+    float: right;
+    margin: 0 15px;
+}
+
+.summary .divi {
+    color: hsl(224deg 28.41% 62.81%);
+}
+
+
+.summary .Reaction {
+    background-color: rgb(245, 233, 233);
+}
+
+#rr {
+    color: var(--Light-red);
+}
+
+.summary .Memory {
+    background-color: rgb(252, 243, 233);
+}
+
+#mm {
+    color: var(--Orangey-yellow);
+}
+
+.summary .Verbal {
+    background-color: rgb(235, 248, 237);
+}
+
+#ve {
+    color: var(--Green-teal);
+}
+
+.summary .Visual {
+    background-color: rgb(243, 236, 255);
+}
+
+#vi {
+    color: var(--Cobalt-blue);
+}
+
+
+
+@media (max-width: 511px) {
+    body {
+        flex-direction: column;
+       
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .box{
+        margin: 0;
+        width: 100%;
+    }
+    .your-result h4 {
+        display: flex;
+        justify-content: center;
+        left: 0;
+       
+       
+    }
+
+    .box1{
+        position: relative;
+    top: 10px;
+    }
+
+    .your-result{
+        width: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 0px 0px 40px 40px;
+        z-index: 1;
+    }
+    
+    .summary{
+        width: 50%;
+        flex-direction: column;
+        display: block;
+        float: left;
+        height: 0;
+    }
+   
+}
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+3
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%)
+
+### Notes
+
+Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraphs): 18px
+
+### Font
+
+- Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
+- Weights: 500, 700, 800 */
